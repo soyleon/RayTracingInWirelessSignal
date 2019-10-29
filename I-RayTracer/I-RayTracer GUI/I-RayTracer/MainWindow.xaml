@@ -1,0 +1,99 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Name="I_RayTracer_MainWindow" mc:Ignorable="d" x:Class="I_RayTracer.MainWindow"
+        Title="I-RayTracer" Height="400" Width="600" ResizeMode="CanResizeWithGrip">
+    <Grid>
+        <Menu x:Name="I_RayTracer_Menu" VerticalAlignment="Top" Height="20">
+            <MenuItem x:Name="MainWindow_Menu_File" Header="File">
+                <MenuItem x:Name="MainWindow_Menu_File_Open" Header="Open"/>
+                <MenuItem x:Name="MainWindow_Menu_File_Save" Header="Save"/>
+                <MenuItem x:Name="MainWindow_Menu_File_New" Header="New"/>
+                <MenuItem x:Name="MainWindow_Menu_File_Exit" Header="Exit"/>
+            </MenuItem>
+            <MenuItem x:Name="MainWindow_Menu_Edit" Header="Edit">
+            </MenuItem>
+            <MenuItem x:Name="MainWindow_Menu_View" Header="View">
+            </MenuItem>
+            <MenuItem x:Name="MainWindow_Menu_Project" Header="Project">
+            </MenuItem>
+            <MenuItem x:Name="MainWindow_Menu_Window" Header="Window">
+            </MenuItem>
+            <MenuItem x:Name="MainWindow_Menu_Help" Header="Help">
+            </MenuItem>
+
+        </Menu>
+        <Grid x:Name="I_RayTracing_MainWindow_Grid" Margin="0,20,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Button x:Name="Button_Tunnel_Interface" Grid.Column="0" Grid.Row="1" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" >
+                <Button.Content>
+                    <StackPanel>
+                        <TextBlock x:Name="Tunnel_Button_Label" HorizontalAlignment="Center" Text="Tunnel" FontWeight="Bold"></TextBlock>
+                        <Image x:Name="Tunnel_Button_Image" Source="/GUIpicture/tunnel.jpg" RenderTransformOrigin="0,0" Margin="0,0,0,20"></Image>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button x:Name="Button_Indoor_Interface" Grid.Column="1" Grid.Row="1" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Click="Button_Indoor_Interface_Click" FontWeight="Bold">
+                <Button.Content>
+                    <StackPanel>
+                        <TextBlock x:Name="Indoor_Button_Label" HorizontalAlignment="Center" Text="Indoor"></TextBlock>
+                        <Image x:Name="Indoor_Button_Image" Source="/GUIpicture/indoor.jpg" RenderTransformOrigin="0.529,0.625" Margin="0,0,0,20"/>                        
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button x:Name="Button_Urban_Interface" Grid.Column="2"  Grid.Row="1" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
+                    <Button.Content>
+                    <StackPanel>                      
+                        <TextBlock x:Name="Urban_Button_Label" HorizontalAlignment="Center" Text="Urban" FontWeight="Bold">
+                            </TextBlock>
+                        <Image x:Name="Urban_Button_Image"  Source="/GUIpicture/urban.jpg" RenderTransformOrigin="0,0" Margin="0,0,0,20"></Image>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button x:Name="Button_Hybrid_Interface" Grid.Column="0"  Grid.Row="2" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
+                <Button.Content>
+                    <StackPanel>
+                        <TextBlock x:Name="Hybird_Button_Label" HorizontalAlignment="Center" Text="Hybird" FontWeight="Bold"></TextBlock>
+                        <Image x:Name="Hybird_Button_Image" Source="/GUIpicture/hybrid.jpg" RenderTransformOrigin="0,0" Margin="0,0,0,20"></Image>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button x:Name="Button_Rural_Interface" Grid.Column="1" Grid.Row="2" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
+                <Button.Content>
+                    <StackPanel>
+                        <TextBlock x:Name="Rural_Button_Label" HorizontalAlignment="Center" Text="Rural" FontWeight="Bold"></TextBlock>
+                        <Image x:Name="Rural_Button_Image" Source="/GUIpicture/rural.jpg" RenderTransformOrigin="0,0" Margin="0,0,0,20"></Image>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button x:Name="Button_Vehicular_Interface" Grid.Column="2" Grid.Row="2" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
+                <Button.Content>
+                    <StackPanel>
+                        <TextBlock x:Name="Vehicular_Button_Label" HorizontalAlignment="Center" Text="Vehicular" FontWeight="Bold"></TextBlock>
+                        <Image x:Name="Vehicular_Button_Image"  Source="/GUIpicture/vehicular.jpg" RenderTransformOrigin="0,0" Margin="0,0,0,20"></Image>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Rectangle x:Name="Backgroud_Rectangle" Grid.Row="0"  Grid.ColumnSpan="3" Stroke="Red" >
+                <Rectangle.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Viewbox VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="0"  Grid.ColumnSpan="3">
+                <Label x:Name="Backgroud_Label" Content="Welcome to I-RayTracer" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </Viewbox>
+        </Grid>
+    </Grid>
+</Window>

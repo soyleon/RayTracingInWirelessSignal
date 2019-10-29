@@ -1,0 +1,101 @@
+﻿<Window x:Name="IRayTracing_Output_Window" x:Class="I_RayTracer.OutputWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="OutputWindow" Height="500" Width="700" ResizeMode="CanResizeWithGrip">
+    <Grid>
+        <Menu x:Name="I_RayTracer_Indoor_Menu" VerticalAlignment="Top" Height="20">
+            <MenuItem x:Name="IndoorWindow_Menu_File" Header="File">
+                <MenuItem x:Name="IndoorWindow_Menu_File_Open" Header="Open"/>
+                <MenuItem x:Name="IndoorWindow_Menu_File_Save" Header="Save"/>
+                <MenuItem x:Name="IndoorWindow_Menu_File_New" Header="New"/>
+                <MenuItem x:Name="IndoorWindow_Menu_File_Exit" Header="Exit"/>
+            </MenuItem>
+            <MenuItem x:Name="IndoorWindow_Menu_Edit" Header="Edit">
+            </MenuItem>
+            <MenuItem x:Name="IndoorWindow_Menu_View" Header="View">
+            </MenuItem>
+            <MenuItem x:Name="IndoorWindow_Menu_Project" Header="Project">
+            </MenuItem>
+            <MenuItem x:Name="IndoorWindow_Menu_Window" Header="Window">
+            </MenuItem>
+            <MenuItem x:Name="IndoorWindow_Menu_Help" Header="Help">
+            </MenuItem>
+        </Menu>
+        <Grid Margin="0,20,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150*"/>
+                <ColumnDefinition Width="225*"/>
+                <ColumnDefinition Width="225*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Column="0" Grid.Row="0">
+                <DataGrid x:Name="Output_Window_PathInformation" HorizontalAlignment="Left" VerticalAlignment="Top" AutoGenerateColumns="False">
+                    <DataGrid.Columns>
+                        <DataGridTemplateColumn x:Name="Output_DataGridTextColumn_Path" Header="Path" Width="80">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <CheckBox>
+                                    </CheckBox>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTextColumn x:Name="Output_DataGridTextColumn_PathNumber" Header="PathNumber" Width="100" Binding="{Binding PathNumber,Mode = TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                        <DataGridTextColumn x:Name="Output_DataGridTextColumn_PathLoss" Header="Pathloss" Width="100" Binding="{Binding Pathloss, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                        <DataGridTextColumn x:Name="Output_DataGridTextColumn_ArrivalAngle" Header="ArrivalAngle" Width="100" Binding="{Binding ArrivalAngle, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                        <DataGridTextColumn x:Name="Output_DataGridTextColumn_TimeDelay" Header="TimeDelay" Width="100" Binding="{Binding TimeDelay, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                        <DataGridTextColumn x:Name="Output_DataGridTextColumn_ReflectionTimes" Header="ReflectionTimes" Width="100" Binding="{Binding ReflectionTimes, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    </DataGrid.Columns>
+                    <DataGrid Name="OutputWindow_PathDataGrid1" AutoGenerateColumns="False"  CanUserAddRows="False">
+                        <!--此时的DataGrid就无法自己生成新行了-->
+                    </DataGrid>
+                    <DataGrid></DataGrid>
+                    <DataGrid></DataGrid>
+                    <DataGrid></DataGrid>
+                    <DataGrid></DataGrid>
+                    <DataGrid></DataGrid>
+                    <DataGrid></DataGrid>
+                    <DataGrid></DataGrid>
+                </DataGrid>
+            </Grid>
+            <Grid Grid.Column="0" Grid.Row="1">
+                <DataGrid x:Name="Output_Window_ReceiverInformation" HorizontalAlignment="Left" VerticalAlignment="Top" AutoGenerateColumns="False">
+                    <DataGrid.Columns>
+                        <DataGridTemplateColumn x:Name="Output_DataGridTextColumn_Receiver" Header="Receiver" Width="80">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTextColumn x:Name="Output_DataGridTextColumn_ReceiverNumber" Header="ReceiverNumber" Width="100" Binding="{Binding ReceiverNumber,Mode = TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                        <DataGridTextColumn x:Name="Output_DataGridTextColumn_Power" Header="Power" Width="100" Binding="{Binding Power, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                        <DataGridTextColumn x:Name="Output_DataGridTextColumn_ReceiverDistance" Header="ReceiverDistance" Width="100" Binding="{Binding ReceiverDistance, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                        <DataGridTextColumn x:Name="Output_DataGridTextColumn_ReceiverLocation" Header="ReceiverLocation" Width="100" Binding="{Binding ReceiverLocation, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                        <DataGridTextColumn x:Name="Output_DataGridTextColumn_ReceiverPathLoss" Header="ReceiverPathLoss" Width="100" Binding="{Binding ReceiverPathLoss, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    </DataGrid.Columns>
+                    <DataGrid Name="OutputWindow_ReceiverDataGrid1" AutoGenerateColumns="False"  CanUserAddRows="False">
+                        <!--此时的DataGrid就无法自己生成新行了-->
+                    </DataGrid>
+                    <DataGrid></DataGrid>
+                    <DataGrid></DataGrid>
+                    <DataGrid></DataGrid>
+                    <DataGrid></DataGrid>
+                    <DataGrid></DataGrid>
+                    <DataGrid></DataGrid>
+                    <DataGrid></DataGrid>
+                </DataGrid>
+            </Grid>
+            <Canvas Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="0" Background="AliceBlue">
+                <Label Canvas.Top="0" Content="3D scene" FontSize="20" Background="Azure"/>
+            </Canvas>
+            <Canvas Grid.Column="1" Grid.Row="1" Background="AntiqueWhite">
+                <Label  Canvas.Top="0" Content="Power vs Distance vs TimeDelay" FontSize="10" Background="Azure"/>
+            </Canvas>
+            <Canvas Grid.Column="2" Grid.Row="1" Background="Aqua">
+                <Label Canvas.Top="0" Content="Power vs Antenna Array vs TimeDelay" FontSize="10" Background="Azure"/>
+            </Canvas>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,57 @@
+ant:
+<ant>
+  <mkdir dir="E:\fuqiuhao\I_raytracing_m\raytracing\for_redistribution" />
+  <mkdir dir="E:\fuqiuhao\I_raytracing_m\raytracing\for_testing" />
+  <mkdir dir="E:\fuqiuhao\I_raytracing_m\raytracing\for_redistribution_files_only" />
+</ant>
+mcc -W 'dotnet:raytracing,raytracingClass,0.0,private' -T link:lib -d E:\fuqiuhao\I_raytracing_m\raytracing\for_testing -v 'class{raytracingClass:E:\fuqiuhao\I_raytracing_m\intersectmianjuxing0.m,E:\fuqiuhao\I_raytracing_m\intersectmianjuxing1.m,E:\fuqiuhao\I_raytracing_m\intersectmianjuxing2.m,E:\fuqiuhao\I_raytracing_m\intersectmianjuxing3.m,E:\fuqiuhao\I_raytracing_m\intersectmianjuxing4.m,E:\fuqiuhao\I_raytracing_m\judge1.m,E:\fuqiuhao\I_raytracing_m\raytracing.m,E:\fuqiuhao\I_raytracing_m\receive1.m,E:\fuqiuhao\I_raytracing_m\receivezhida.m,E:\fuqiuhao\I_raytracing_m\reflectdirectionjx.m}' 
+Compiler version: 5.2 (R2014b)
+Dependency analysis by REQUIREMENTS.
+[警告: Adding path "E:\fuqiuhao\I_raytracing_m" to Compiler path instance.] 
+[警告: Adding path "E:\fuqiuhao\I_raytracing_m" to Compiler path instance.] 
+[警告: 重复的目录名称: E:\fuqiuhao\I_raytracing_m] 
+[警告: Adding path "E:\fuqiuhao\I_raytracing_m" to Compiler path instance.] 
+[警告: 重复的目录名称: E:\fuqiuhao\I_raytracing_m] 
+[警告: Adding path "E:\fuqiuhao\I_raytracing_m" to Compiler path instance.] 
+[警告: 重复的目录名称: E:\fuqiuhao\I_raytracing_m] 
+[警告: Adding path "E:\fuqiuhao\I_raytracing_m" to Compiler path instance.] 
+[警告: 重复的目录名称: E:\fuqiuhao\I_raytracing_m] 
+[警告: Adding path "E:\fuqiuhao\I_raytracing_m" to Compiler path instance.] 
+[警告: 重复的目录名称: E:\fuqiuhao\I_raytracing_m] 
+[警告: Adding path "E:\fuqiuhao\I_raytracing_m" to Compiler path instance.] 
+[警告: 重复的目录名称: E:\fuqiuhao\I_raytracing_m] 
+[警告: Adding path "E:\fuqiuhao\I_raytracing_m" to Compiler path instance.] 
+[警告: 重复的目录名称: E:\fuqiuhao\I_raytracing_m] 
+[警告: Adding path "E:\fuqiuhao\I_raytracing_m" to Compiler path instance.] 
+[警告: 重复的目录名称: E:\fuqiuhao\I_raytracing_m] 
+[警告: Adding path "E:\fuqiuhao\I_raytracing_m" to Compiler path instance.] 
+[警告: 重复的目录名称: E:\fuqiuhao\I_raytracing_m] 
+Parsing file "E:\fuqiuhao\I_raytracing_m\intersectmianjuxing0.m"
+	(Referenced from: "Compiler Command Line").
+Parsing file "E:\fuqiuhao\I_raytracing_m\intersectmianjuxing1.m"
+	(Referenced from: "Compiler Command Line").
+Parsing file "E:\fuqiuhao\I_raytracing_m\intersectmianjuxing2.m"
+	(Referenced from: "Compiler Command Line").
+Parsing file "E:\fuqiuhao\I_raytracing_m\intersectmianjuxing3.m"
+	(Referenced from: "Compiler Command Line").
+Parsing file "E:\fuqiuhao\I_raytracing_m\intersectmianjuxing4.m"
+	(Referenced from: "Compiler Command Line").
+Parsing file "E:\fuqiuhao\I_raytracing_m\judge1.m"
+	(Referenced from: "Compiler Command Line").
+Parsing file "E:\fuqiuhao\I_raytracing_m\raytracing.m"
+	(Referenced from: "Compiler Command Line").
+Parsing file "E:\fuqiuhao\I_raytracing_m\receive1.m"
+	(Referenced from: "Compiler Command Line").
+Parsing file "E:\fuqiuhao\I_raytracing_m\receivezhida.m"
+	(Referenced from: "Compiler Command Line").
+Parsing file "E:\fuqiuhao\I_raytracing_m\reflectdirectionjx.m"
+	(Referenced from: "Compiler Command Line").
+Deleting 0 temporary MEX authorization files.
+Generating file "E:\fuqiuhao\I_raytracing_m\raytracing\for_testing\raytracingClassNative.cs".
+Generating file "E:\fuqiuhao\I_raytracing_m\raytracing\for_testing\raytracingClass.cs".
+Generating file "E:\fuqiuhao\I_raytracing_m\raytracing\for_testing\readme.txt".
+Executing command: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /nologo /optimize /doc:"E:\fuqiuhao\I_raytracing_m\raytracing\for_testing\raytracing.xml" /t:library /r:"D:\MATLAB\R2014b\toolbox\dotnetbuilder\bin\win64\v2.0\MWArray.dll" /resource:"E:\fuqiuhao\I_raytracing_m\raytracing\for_testing\raytracing.ctf" /out:"E:\fuqiuhao\I_raytracing_m\raytracing\for_testing\raytracing.dll" "E:\fuqiuhao\I_raytracing_m\raytracing\for_testing\raytracingClass.cs"Executing command: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /nologo /optimize /doc:"E:\fuqiuhao\I_raytracing_m\raytracing\for_testing\raytracingNative.xml" /t:library /r:"D:\MATLAB\R2014b\toolbox\dotnetbuilder\bin\win64\v2.0\MWArray.dll" /resource:"E:\fuqiuhao\I_raytracing_m\raytracing\for_testing\raytracing.ctf" /out:"E:\fuqiuhao\I_raytracing_m\raytracing\for_testing\raytracingNative.dll" "E:\fuqiuhao\I_raytracing_m\raytracing\for_testing\raytracingClassNative.cs"
+Packaging...
+Creating the bundle...
+Web based installer created at E:\fuqiuhao\I_raytracing_m\raytracing\for_redistribution\MyAppInstaller_web.exe.
+Packaging complete.

@@ -1,0 +1,17 @@
+E:\fuqiuhao\C#GUI Test\I-RayTracer\I-RayTracer\bin\Debug\I-RayTracer.exe.config
+E:\fuqiuhao\C#GUI Test\I-RayTracer\I-RayTracer\bin\Debug\I-RayTracer.exe
+E:\fuqiuhao\C#GUI Test\I-RayTracer\I-RayTracer\bin\Debug\I-RayTracer.pdb
+E:\fuqiuhao\C#GUI Test\I-RayTracer\I-RayTracer\obj\Debug\I-RayTracer.csprojResolveAssemblyReference.cache
+E:\fuqiuhao\C#GUI Test\I-RayTracer\I-RayTracer\obj\Debug\MainWindow.baml
+E:\fuqiuhao\C#GUI Test\I-RayTracer\I-RayTracer\obj\Debug\MainWindow.g.cs
+E:\fuqiuhao\C#GUI Test\I-RayTracer\I-RayTracer\obj\Debug\App.g.cs
+E:\fuqiuhao\C#GUI Test\I-RayTracer\I-RayTracer\obj\Debug\I-RayTracer_MarkupCompile.cache
+E:\fuqiuhao\C#GUI Test\I-RayTracer\I-RayTracer\obj\Debug\I-RayTracer.g.resources
+E:\fuqiuhao\C#GUI Test\I-RayTracer\I-RayTracer\obj\Debug\I_RayTracer.Properties.Resources.resources
+E:\fuqiuhao\C#GUI Test\I-RayTracer\I-RayTracer\obj\Debug\I-RayTracer.csproj.GenerateResource.Cache
+E:\fuqiuhao\C#GUI Test\I-RayTracer\I-RayTracer\obj\Debug\I-RayTracer.exe
+E:\fuqiuhao\C#GUI Test\I-RayTracer\I-RayTracer\obj\Debug\I-RayTracer.pdb
+E:\fuqiuhao\C#GUI Test\I-RayTracer\I-RayTracer\obj\Debug\IndoorWindow.baml
+E:\fuqiuhao\C#GUI Test\I-RayTracer\I-RayTracer\obj\Debug\IndoorWindow.g.cs
+E:\fuqiuhao\C#GUI Test\I-RayTracer\I-RayTracer\obj\Debug\OutputWindow.baml
+E:\fuqiuhao\C#GUI Test\I-RayTracer\I-RayTracer\obj\Debug\OutputWindow.g.cs
